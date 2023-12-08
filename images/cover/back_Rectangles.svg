@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850.07 603.05">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #2b3990;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="artboard_18" data-name="artboard 18">
+    <path class="cls-1" d="m0,0v603.05h850.07V0H0Zm83.23,46.91h113.24v76.8h-113.24V46.91Zm272.27,293.16h-159.32v-108.05h159.32v108.05Zm318.32,215.99h-159.32v-108.05h159.32v108.05Zm67.16-216.11h-112.07v-76.8h112.07v76.8Z"/>
+  </g>
+</svg>

@@ -1,0 +1,75 @@
+#item-1-1,
+#item-3-2,
+#item-3-4,
+#item-3-5,
+#item-5-4 {
+    position: relative;
+    border: 1px solid #ffffff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+#image-container {
+    position: relative; /* Change to relative to make the absolute positioning relative to this container */
+    width: 100%; /* Make sure the container takes up the full width of its parent */
+}
+
+.background-image-color {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -3;
+}
+
+.background-image {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2; /* Lower z-index for background */
+}
+
+.foreground-image {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Adjust z-index as needed */
+}
+
+
+
+.grid-container {
+    display: grid;
+    padding-left: 4.2%;
+    padding-top: 2.1%;
+    grid-template-columns: repeat(5, 19.6% [col-start]);
+    grid-template-rows: repeat(100, 17.6% [col-start]);
+    position: relative;
+}
+
+/* Style for grid items */
+.grid-item {
+    position: relative;
+    border: 0.1px solid #ffffff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+
+@keyframes rotateAnimation {
+    from {
+        transform: rotate(180deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+
