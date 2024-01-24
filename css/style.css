@@ -1,26 +1,27 @@
-#item-1-1,
-#item-3-2,
-#item-3-4,
-#item-3-5,
-#item-5-4 {
-    position: relative;
-    border: 1px solid #ffffff;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+#item-4-3 {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Optional: horizontally center the content */
+}
+
+.grid-container-wrapper {
+    overflow: hidden;
 }
 
 #image-container {
     position: relative; /* Change to relative to make the absolute positioning relative to this container */
-    width: 100%; /* Make sure the container takes up the full width of its parent */
+    width: 85%; /* Make sure the container takes up the full width of its parent */
+    margin-left: 8%;
 }
+
 
 .background-image-color {
     width: 100%;
     height: auto; /* Maintain aspect ratio */
     position: absolute;
-    top: 0;
-    left: 0;
     z-index: -3;
 }
 
@@ -28,8 +29,6 @@
     width: 100%;
     height: auto; /* Maintain aspect ratio */
     position: absolute;
-    top: 0;
-    left: 0;
     z-index: -2; /* Lower z-index for background */
 }
 
@@ -37,31 +36,8 @@
     width: 100%;
     height: auto; /* Maintain aspect ratio */
     position: absolute;
-    top: 0;
-    left: 0;
     z-index: -1; /* Adjust z-index as needed */
 }
-
-
-
-.grid-container {
-    display: grid;
-    padding-left: 4.2%;
-    padding-top: 2.1%;
-    grid-template-columns: repeat(5, 19.6% [col-start]);
-    grid-template-rows: repeat(100, 17.6% [col-start]);
-    position: relative;
-}
-
-/* Style for grid items */
-.grid-item {
-    position: relative;
-    border: 0.1px solid #ffffff;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    text-align: center;
-}
-
 
 @keyframes rotateAnimation {
     from {
@@ -72,4 +48,108 @@
     }
 }
 
+@charset "UTF-8";
 
+.grid-cover-container {
+    display: grid;
+    padding-left: 4.1%;
+    padding-top: 1.8%;
+    padding-bottom: 4.1%;
+    grid-template-columns: repeat(5, 18.9% [col-start]);
+    grid-template-rows: repeat(5, 159px [row-start]);
+    position: relative;
+}
+
+.grid-container {
+    display: grid;
+    padding-left: 4.1%;
+    padding-top: 1.9%;
+    grid-template-columns: repeat(5, 19.6% [col-start]);
+    grid-template-rows: repeat(30, 187px [row-start]);
+    position: relative;
+}
+
+/* Style for grid items */
+.grid-item {
+    position: relative;
+    border: 0.1px solid #ffffff;
+}
+
+.cover-letter-vertical {
+    position: absolute;
+    display: block;  /* Removes any default spacing/margin */
+    object-fit: contain;
+}
+
+.grid-item-big {
+    position: relative;
+    overflow: visible; /* Allow content to overflow */
+}
+
+.cover-letter-horizontal {
+    position: absolute;
+    display: block;  /* Removes any default spacing/margin */
+}
+
+.small-image {
+    max-height: 73%;
+    bottom: 0;
+}
+
+.line-small-cover {
+    width: 71%;
+    position: absolute;
+}
+
+.line-big-cover {
+    width: 100%;
+    position: absolute;
+    right: 0;
+}
+
+
+
+.text-regular {
+    position: absolute;
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: 17pt;
+}
+
+.text-extrabold {
+    position: absolute;
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 800;
+}
+
+
+.nav-bar {
+    background-color: #ffffff;
+    border-top: 3px solid #2a3b90;
+    color: white;
+    display: flex;
+    justify-content: flex-start; /* Align items to the left */
+    position: relative;
+    width: 100%;
+    z-index: 1000; /* Ensure it's above other elements */
+}
+
+.nav-bar a {
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+    margin-right: 20px; /* Add some space between the items */
+    position: relative;
+}
+
+.nav-bar a:hover {
+    border-bottom: 4px solid black;
+}
+
+.nav-bar a.selected {
+    border-bottom: 4px solid #2a3b90;
+    color: #2a3b90;
+    font-weight: bold;
+}

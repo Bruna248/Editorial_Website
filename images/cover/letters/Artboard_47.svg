@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 441.35 673.79">
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 136.7 139.73">
   <defs>
     <style>
       .cls-1 {
+        fill: #fff;
         stroke-width: 0px;
       }
     </style>
   </defs>
-  <path class="cls-1" d="m83.13,673.79l51.62-183.88h172.62l41.77,183.88h92.21L289.88,6.93V1.09h-96.84l-3.89-1.09L0,673.79h83.13Zm125.28-446.28h39.36l44.51,195.95h-138.87l55.01-195.95Z"/>
+  <g id="artboard_18" data-name="artboard 18">
+    <polygon class="cls-1" points="79.25 92.53 79.25 48.57 136.7 64.69 136.7 38.38 0 0 0 26.32 58.22 42.66 58.22 97.31 0 110.53 0 139.73 136.7 108.68 136.7 79.49 79.25 92.53"/>
+  </g>
 </svg>

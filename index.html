@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;800&display=swap&subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>My Webpage with Background Image</title>
-    <!-- Link to your JavaScript file -->
     <script src="rotate.js"></script>
     <style>
         body {
-            background-color: #752f2f;
+            background-color: #ffffff;
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: cover;
@@ -20,43 +22,168 @@
     </style>
 </head>
 <body>
-<div id="image-container">
-    <img id="back_blue" src="images/cover/back_blue.svg" alt="Background color cover" class="background-image-color">
-    <img id="city_white" src="images/cover/city.svg" alt="City" class="background-image">
-    <img id="back_rectangles" src="images/cover/back_Rectangles.svg" alt="Background Rectangles" class="foreground-image">
+<div class="cover-wrapper" style="overflow: hidden; align-items: center;">
+    <div id="image-container">
+        <img id="back_blue" src="images/cover/back_blue.svg" alt="Background color cover" class="background-image-color">
+        <img id="city_white" src="images/cover/city.svg" alt="City" class="background-image">
+        <img id="back_rectangles" src="images/cover/back_Rectangles.svg" alt="Background Rectangles" class="foreground-image">
+    </div>
+
+    <div class="grid-container-wrapper" style="margin-left: 8%; margin-right: 4%">
+        <div class="grid-cover-container">
+            <div class="grid-item" id="item-1-1">
+                <img class="line-small-cover" src="images/cover/letters/line_small_cover.svg" style="bottom: 0; right: 0" alt="letter"/>
+                <img class="line-small-cover" src="images/cover/letters/line_small_cover.svg" style="top: 28%; right: 0" alt="letter"/>
+            </div>
+            <div class="grid-item"><img class="cover-letter-horizontal small-image" src="images/cover/letters/Artboard39.svg" style="left: 0" alt="letter"/></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+
+            <div class="grid-item grid-item-big">
+                <img class="cover-letter-vertical" src="images/cover/letters/Artboard_38.svg" style="width: 110%;" alt="letterBIG"/>
+            </div>
+            <div class="grid-item">
+                <img class="cover-letter-vertical" src="images/cover/letters/Artboard_37.svg" style="max-height: 100%; left: 8%;" alt="letter"/>
+                <img class="cover-letter-vertical" src="images/cover/letters/Artboard_34.svg" style="max-height: 100%; right: 0;" alt="letter"/>
+            </div>
+            <div class="grid-item">
+                <img class="cover-letter-horizontal" src="images/cover/letters/Artboard35.svg" style="height: 55%; bottom: 0" alt="letter"/>
+                <div class="text-regular" style="right: 4%; top: 70%;">VOL. 1</div>
+            </div>
+            <div class="grid-item">
+                <div class="text-extrabold" style="left: 4%; top: 60%; font-size: 30pt;">ALTA<br>& baixa</div>
+            </div>
+            <div class="grid-item"></div>
+
+            <div class="grid-item"></div>
+            <div class="grid-item" id="item-3-2">
+                <img class="line-big-cover" src="images/cover/letters/line_big_cover.svg" style="top: 0;" alt="letter"/>
+            </div>
+            <div class="grid-item" style="overflow: hidden">
+                <img class="cover-letter-horizontal" src="images/cover/letters/36.svg" style="right: 2%" alt="letter"/>
+            </div>
+            <div class="grid-item" id="item-3-4">
+                <img class="cover-letter-horizontal small-image" src="images/cover/letters/Artboard_31.svg" alt="letter"/>
+                <img class="line-small-cover" src="images/cover/letters/line_small_cover.svg" style="bottom: 0; left: 72%" alt="letter"/>
+                <img class="line-small-cover" src="images/cover/letters/line_small_cover.svg" style="top: 28%; left: 72%" alt="letter"/>
+            </div>
+            <div class="grid-item" id="item-3-5">
+                <div class="text-regular" style="left: 50%; font-size: 14pt; bottom: 10%">Revista<br>de cultura<br>tipografica</div>
+            </div>
+
+            <div class="grid-item">
+                <div class="text-regular" style="font-size: 11pt">Coimbra, Portugal<br>Revista Trimestral<br>Primavera, 2022</div>
+            </div>
+            <div class="grid-item" style="overflow: hidden">
+                <img class="cover-letter-vertical" src="images/cover/letters/Artboard_40.svg" alt="letter"/>
+            </div>
+            <div class="grid-item" id="item-4-3">
+                <img class="cover-letter-vertical" src="images/cover/letters/Artboard_33.svg" alt="letter"/>
+            </div>
+            <div class="grid-item" style="overflow: hidden">
+                <img class="cover-letter-vertical" src="images/cover/letters/Artboard_28.svg" style="rotate: 270deg; left: -2%; width: 104%" alt="letter"/>
+            </div>
+            <div class="grid-item" id="item-4-5" style="overflow: hidden">
+                <img class="cover-letter-horizontal" src="images/cover/letters/Artboard_27.svg" style="rotate: -90deg; width: 72%; right: 9%; top: -50%; left: 10%" alt="letter"/>
+            </div>
+
+            <div class="grid-item"></div>
+            <div class="grid-item" style="overflow: hidden">
+                <img class="cover-letter-vertical" src="images/cover/letters/Artboard_32.svg" style="width: 35%; top: -15%; right: 0" alt="letter"/>
+            </div>
+            <div class="grid-item" style="overflow: hidden">
+                <img class="cover-letter-vertical" src="images/cover/letters/Artboard_30.svg" style="width: 125%; top: -65%; left: 0" alt="letter"/>
+            </div>
+            <div class="grid-item" id="item-5-4">
+                <img class="line-big-cover" src="images/cover/letters/line_big_cover.svg" style="top: 0;" alt="letter"/>
+                <img class="line-big-cover" src="images/cover/letters/line_big_cover.svg" style="bottom: 0;" alt="letter"/>
+            </div>
+            <div class="grid-item">
+                <img class="cover-letter-vertical" src="images/cover/letters/Artboard_47.svg" style="width: 90%; top: -50%; left: 0" alt="letter"/>
+            </div>
+        </div>
+    </div>
 </div>
+
+<div class="nav-bar" id="navbar">
+    <a href="#" class="selected text-extrabold" style="margin-left: 8%;">Artigo 1</a>
+    <a href="#" class="text-extrabold">Artigo 2</a>
+    <div class="text-extrabold" style="right: 8%; font-size: 30pt; color: black; padding: 15px;">ALTA & baixa</div>
+</div>
+
+<script>
+    window.onscroll = function() { myFunction() };
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.style.position = "fixed";
+            navbar.style.top = "0";
+        } else {
+            navbar.style.position = "relative";
+        }
+    }
+</script>
+
 
 <div class="grid-container">
-    <div class="grid-item" id="item-1-1"></div>
-    <div class="grid-item"></div>
-    <div class="grid-item"></div>
-    <div class="grid-item"></div>
-    <div class="grid-item"></div>
-
     <div class="grid-item"></div>
     <div class="grid-item"></div>
     <div class="grid-item"></div>
     <div class="grid-item"></div>
     <div class="grid-item"></div>
-
-    <div class="grid-item"></div>
-    <div class="grid-item" id="item-3-2"></div>
-    <div class="grid-item"></div>
-    <div class="grid-item" id="item-3-4"></div>
-    <div class="grid-item" id="item-3-5"></div>
-
     <div class="grid-item"></div>
     <div class="grid-item"></div>
     <div class="grid-item"></div>
     <div class="grid-item"></div>
     <div class="grid-item"></div>
-
     <div class="grid-item"></div>
     <div class="grid-item"></div>
     <div class="grid-item"></div>
-    <div class="grid-item" id="item-5-4"></div>
     <div class="grid-item"></div>
-
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
     <div class="grid-item"></div>
     <div class="grid-item"></div>
     <div class="grid-item"></div>
@@ -163,8 +290,7 @@
 </div>
 
 
-
-<div id="svg-container">
+<!--<div id="svg-container">
     <img id="38" src="images/cover/letters/Artboard_38.svg" alt="First SVG">
     <img id="b2" src="images/cover/letters/b2.svg" alt="Second SVG" style="display: none;">
     <img id="b3" src="images/cover/letters/b2.svg" alt="Second SVG" style="display: none;">
@@ -179,7 +305,7 @@
         document.getElementById('38').style.display = 'block';
         document.getElementById('b2').style.display = 'none';
     });
-</script>
+</script>-->
 <div class="content">
     <h1>Hello World!</h1>
     <p>This is my first webpage.</p>
