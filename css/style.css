@@ -21,6 +21,11 @@
     margin-left: 8%;
 }
 
+.cover-rectangle-color {
+    height: 111%; /* Maintain aspect ratio */
+    position: absolute;
+    z-index: 0;
+}
 
 .background-image-color {
     width: 100%;
@@ -129,17 +134,17 @@
 
 .title {
     font-size: 30pt;
-    color: black;
     padding: 15px;
 }
 
 .nav-bar {
     background-color: #ffffff;
-    border-top: 3px solid #2a3b90;
     color: white;
     display: flex;
     justify-content: flex-start; /* Align items to the left */
     position: relative;
+    left: 0;
+    right: 0;
     width: 100%;
     z-index: 1000; /* Ensure it's above other elements */
 }
