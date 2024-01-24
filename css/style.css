@@ -11,6 +11,10 @@
     overflow: hidden;
 }
 
+.grid-item img {
+    transition: transform 0.3s ease-in-out;
+}
+
 #image-container {
     position: relative; /* Change to relative to make the absolute positioning relative to this container */
     width: 85%; /* Make sure the container takes up the full width of its parent */
@@ -72,7 +76,6 @@
 /* Style for grid items */
 .grid-item {
     position: relative;
-    border: 0.1px solid #ffffff;
 }
 
 .cover-letter-vertical {

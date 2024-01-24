@@ -80,4 +80,30 @@ document.addEventListener('DOMContentLoaded', function() {
     cityWhite.addEventListener('transitionend', function() {
         isRotating = false;
     });
+
+
+    // Rotate letters
+    $(window).on("load", function() {
+        $(".grid-item").on("mouseenter", function() {
+            rotateImages($(this));
+        });
+    });
+
+    function rotateImages(gridItem) {
+        // Rotate the specified images
+        gridItem.find("img[alt='letter'], img[alt='letterBIG']").each(function() {
+            var randomRotation = Math.floor(Math.random() * 4) * 90; // 0, 90, 180, 270
+            $(this).css("transform", "rotate(" + randomRotation + "deg)");
+        });
+
+        // After 2000 milliseconds (2 seconds), reset the rotation
+        setTimeout(function() {
+            resetRotation(gridItem);
+        }, 2000);
+    }
+
+    function resetRotation(gridItem) {
+        // Reset the rotation to the initial position
+        gridItem.find("img[alt='letter'], img[alt='letterBIG']").css("transform", "rotate(0deg)");
+    }
 });
