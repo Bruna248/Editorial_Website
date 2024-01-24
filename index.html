@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <title>My Webpage with Background Image</title>
     <script src="rotate.js"></script>
+    <script src="content.js"></script>
     <style>
         body {
             background-color: #ffffff;
@@ -109,25 +110,13 @@
 <div class="nav-bar" id="navbar">
     <a href="#" class="selected text-extrabold" style="margin-left: 8%;">Artigo 1</a>
     <a href="#" class="text-extrabold">Artigo 2</a>
-    <div class="text-extrabold" style="right: 8%; font-size: 30pt; color: black; padding: 15px;">ALTA & baixa</div>
+    <div class="text-extrabold title" style="right: 8%;">ALTA & baixa</div>
 </div>
 
-<script>
-    window.onscroll = function() { myFunction() };
-
-    var navbar = document.getElementById("navbar");
-    var sticky = navbar.offsetTop;
-
-    function myFunction() {
-        if (window.pageYOffset >= sticky) {
-            navbar.style.position = "fixed";
-            navbar.style.top = "0";
-        } else {
-            navbar.style.position = "relative";
-        }
-    }
-</script>
-
+<div class="content-section" id="artigo1">
+    <h2>Artigo 1 Content</h2>
+    <p>This is the content of Artigo 1.</p>
+</div>
 
 <div class="grid-container">
     <div class="grid-item"></div>

@@ -124,6 +124,11 @@
     font-weight: 800;
 }
 
+.title {
+    font-size: 30pt;
+    color: black;
+    padding: 15px;
+}
 
 .nav-bar {
     background-color: #ffffff;
@@ -152,4 +157,9 @@
     border-bottom: 4px solid #2a3b90;
     color: #2a3b90;
     font-weight: bold;
+}
+
+.content-section {
+    margin-top: 60px; /* Adjust based on the height of your navbar */
+    padding: 20px;
 }
