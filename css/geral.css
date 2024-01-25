@@ -8,7 +8,10 @@
     --branco: #F9FAFF;
     --azul: #2b3c90;
 
-    font-family: 'Work Sans', sans-serif;
+    /*FONTE*/
+    --fonte: 'Work Sans', sans-serif;
+
+    font-family: var(--fonte);
 }
 
 #artigo1{

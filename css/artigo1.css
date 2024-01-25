@@ -25,7 +25,6 @@
     width: 150%;
 
     color: var(--Azul, #2B3990);
-    font-family: "Work Sans";
     font-size: 20.625rem;
     font-style: normal;
     font-weight: 800;
@@ -38,7 +37,6 @@
 
 .title {
     color: var(--Azul, #2B3990);
-    font-family: "Work Sans";
     font-size: 5.625rem;
     font-style: normal;
     font-weight: 800;
@@ -49,7 +47,6 @@
     color: var(--Preto, #0B1035);
     margin-top: 42px;
     text-overflow: ellipsis;
-    font-family: "Work Sans";
     font-size: 2rem;
     font-style: normal;
     font-weight: 600;
@@ -59,7 +56,6 @@
 .text {
     padding: 32px;
     color: var(--Preto, #0B1035);
-    font-family: "Work Sans";
     font-size: 1.25rem;
     font-style: normal;
     font-weight: 400;
