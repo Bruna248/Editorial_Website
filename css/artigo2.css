@@ -1,0 +1,32 @@
+.author {
+    margin: 0;
+    line-height: 30px;
+}
+
+.contain {
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.contain > .text-background {
+    position: relative;
+    left: -0.5%;
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg);
+}
+
+.author-disclaimer {
+    padding: 30px;
+    margin-bottom: 0;
+}
+
+.disclaimer {
+    margin-top: 18px;
+}
+
+.extra-text {
+    padding: 20px 30px 20px 40px;
+    font-size: 1.2rem;
+}
