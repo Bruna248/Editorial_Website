@@ -14,33 +14,33 @@
     font-family: var(--fonte);
 }
 
-#artigo1{
+/*#artigo1{
     margin-left: 8%;
-}
+}*/
 
-#AB{
-    right: 8%; 
-    color: black;
-}
-
-.nav-bar {
-    background-color:var(--branco);
-    color:var(--branco);
+nav {
+    background-color: var(--branco);
+    color: var(--preto);
     display: flex;
-    justify-content: flex-start; /* Align items to the left */
-    position: relative;
-    left: 0;
-    right: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 8%;
     width: 100%;
-    z-index: 1000; /* Ensure it's above other elements */
+    z-index: 1000;
+    align-content: center;
+    position: relative;
+    top: 0;
 }
 
-.nav-bar a {
+nav a {
     color: var(--preto);
     text-decoration: none;
-    padding: 15px;
-    margin-right: 20px; /* Add some space between the items */
-    position: relative;
+}
+
+nav .ul a {
+    margin-right: 30px;
+    font-size: 24px;
+    font-weight: 800;
 }
 
 .nav-bar a:hover {
@@ -50,9 +50,17 @@
 .nav-bar a.selected {
     border-bottom: 4px solid var(--azul);
     color: var(--azul);
-    font-weight: bold;
 }
 
-footer{
+#AB {
+    float: right;
+    font-size: 2.5rem;
+    /*padding: 15px;*/
+    font-weight: 800;
+}
 
+
+
+footer {
+    background-color:var(--azul);
 }
