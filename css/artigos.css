@@ -1,9 +1,3 @@
-* {
-    background-color: var(--branco);
-    vertical-align: baseline;
-}
-/*Teste*/
-
 .prevent-selected {
     -webkit-user-select: none;
     -ms-user-select: none;
@@ -66,8 +60,4 @@
 
 #two {
     margin-top: 390px;
-}
-
-p:first-child {
-    margin-bottom: 30px;
 }
