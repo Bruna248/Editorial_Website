@@ -20,8 +20,6 @@ body {
     justify-content: center; /* Optional: horizontally center the content */
 }
 
-
-
 .grid-item img {
     transition: transform 0.3s ease-in-out;
 }
@@ -217,6 +215,16 @@ p {
     transform-origin: top left;
     z-index: 1;
     user-select: none;
+}
+
+
+#AB a{
+    cursor:pointer;
+    color:var(--azul);
+}
+
+#AB a:hover {
+    border-bottom: 4px solid var(--azul);
 }
 
 @keyframes floatAnimation1 {
