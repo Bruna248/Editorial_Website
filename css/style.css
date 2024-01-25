@@ -108,7 +108,7 @@ body {
 /* Style for grid items */
 .grid-item {
     position: relative;
-    border: 0.01px solid #000;
+    /*border: 0.01px solid #000;*/
 }
 
 .cover-letter-vertical {
@@ -165,12 +165,13 @@ body {
 
 
 .text-small {
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 
 .text-big {
-    font-size: 2.188rem;
+    font-size: 2.063rem;
+    line-height: 2.65rem;
 }
 
 .title {
@@ -199,3 +200,75 @@ p {
     color: var(--preto);
 }
 
+
+
+
+
+.float-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.letter-intro-animate {
+    position: absolute;
+    width: 13%;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    transform-origin: top left;
+    z-index: 1;
+    user-select: none;
+}
+
+@keyframes floatAnimation1 {
+    0% {
+        transform: translate(65vw, 0);
+    }
+    25% {
+        transform: translate(45vw, 30vh);
+    }
+    50% {
+        transform: translate(15vw, 50vh);
+    }
+    75% {
+        transform: translate(0vw, 15vh);
+    }
+    100% {
+        transform: translate(65vw, 0);
+    }
+}
+
+@keyframes floatAnimation2 {
+    0% {
+        transform: translate(50vw, 30vh);
+    }
+    25% {
+        transform: translate(0vw, 40vh);
+    }
+    50% {
+        transform: translate(20vw, 0vh);
+    }
+    75% {
+        transform: translate(85vw, 60vh);
+    }
+    100% {
+        transform: translate(50vw, 30vh);
+    }
+}
+
+@keyframes floatAnimation3 {
+    0% {
+        transform: translate(0vw, 15vh);
+    }
+    25% {
+        transform: translate(30vw, 65vh);
+    }
+    50% {
+        transform: translate(65vw, 20vh);
+    }
+    75% {
+        transform: translate(30vw, 40vh);
+    }
+    100% {
+        transform: translate(0vw, 15vh);
+    }
+}
