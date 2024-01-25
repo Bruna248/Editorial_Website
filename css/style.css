@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600;800&display=swap');
 
 body {
     background-color: #ffffff;
@@ -78,8 +78,6 @@ body {
     }
 }
 
-@charset "UTF-8";
-
 .grid-container-wrapper {
     position: relative;
     left: 50%;
@@ -145,21 +143,34 @@ body {
     right: 0;
 }
 
-
+.text-light {
+    font-weight: 300;
+}
 
 .text-regular {
-    position: absolute;
-    color: white;
-    font-family: 'Work Sans', sans-serif;
     font-weight: 400;
-    font-size: 17pt;
+}
+
+.text-semibold {
+    font-weight: 600;
+}
+
+.text-bold {
+    font-weight: 700;
 }
 
 .text-extrabold {
-    position: absolute;
-    color: white;
-    font-family: 'Work Sans', sans-serif;
     font-weight: 800;
+}
+
+
+.text-small {
+    font-size: 16px;
+}
+
+
+.text-big {
+    font-size: 2.188rem;
 }
 
 .title {
@@ -171,3 +182,20 @@ body {
     margin-top: 60px; /* Adjust based on the height of your navbar */
     padding: 20px;
 }
+
+p {
+    padding-bottom: 18px;
+}
+
+.text-azul {
+    color: var(--azul);
+}
+
+.text-branco {
+    color: var(--branco);
+}
+
+.text-preto {
+    color: var(--preto);
+}
+
