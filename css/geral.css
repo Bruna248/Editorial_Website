@@ -18,13 +18,20 @@
     margin-left: 8%;
 }*/
 
-nav {
-    background-color: var(--branco);
-    color: var(--preto);
+#AB{
+    position: absolute;
+    right: 8%;
+    align-self: center;
+    color: black;
+}
+
+.nav-bar {
+    background-color:var(--branco);
+    color:var(--preto);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 18px 8%;
+    padding: 32px 8%;
     width: 100%;
     z-index: 1000;
     align-content: center;
@@ -55,7 +62,6 @@ nav .ul a {
 #AB {
     float: right;
     font-size: 2.5rem;
-    /*padding: 15px;*/
     font-weight: 800;
 }
 
