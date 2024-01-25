@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600;800&display=swap');
 
 body {
     background-color: #ffffff;
@@ -20,44 +20,52 @@ body {
     justify-content: center; /* Optional: horizontally center the content */
 }
 
-.grid-container-wrapper {
-    overflow: hidden;
-}
+
 
 .grid-item img {
     transition: transform 0.3s ease-in-out;
 }
 
+.cover-wrapper {
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
 #image-container {
-    position: relative; /* Change to relative to make the absolute positioning relative to this container */
-    width: 85%; /* Make sure the container takes up the full width of its parent */
-    margin-left: 8%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 100vh; /* Set the height to the viewport height */
+    overflow: hidden;
+}
+
+.background-image-color,
+.background-image,
+.foreground-image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover; /* Maintain aspect ratio and cover the entire container */
 }
 
 .cover-rectangle-color {
-    height: 100vh; /* Maintain aspect ratio */
     position: absolute;
-    z-index: 0;
+    z-index: 1;
+    width: max-content;
+    height: 100vh;
 }
 
 .background-image-color {
-    width: 100%;
-    height: auto; /* Maintain aspect ratio */
-    position: absolute;
     z-index: -3;
 }
 
 .background-image {
-    width: 100%;
-    height: auto; /* Maintain aspect ratio */
-    position: absolute;
     z-index: -2; /* Lower z-index for background */
 }
 
 .foreground-image {
-    width: 100%;
-    height: auto; /* Maintain aspect ratio */
-    position: absolute;
     z-index: -1; /* Adjust z-index as needed */
 }
 
@@ -70,15 +78,21 @@ body {
     }
 }
 
-@charset "UTF-8";
+.grid-container-wrapper {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 100vh; /* Set the height to the viewport height */
+    overflow: hidden;
+}
 
 .grid-cover-container {
     display: grid;
-    padding-left: 4.1%;
-    padding-top: 1.8%;
-    padding-bottom: 4.1%;
-    grid-template-columns: repeat(5, 18.9% [col-start]);
-    grid-template-rows: repeat(5, 159px [row-start]);
+    padding-left: 4.8vh;
+    padding-top: 2.7vh;
+    grid-template-columns: repeat(5, 26.4vh [col-start]);
+    grid-template-rows: repeat(5, 17.9vh [row-start]);
     position: relative;
 }
 
@@ -94,6 +108,7 @@ body {
 /* Style for grid items */
 .grid-item {
     position: relative;
+    /*border: 0.01px solid #000;*/
 }
 
 .cover-letter-vertical {
@@ -128,21 +143,35 @@ body {
     right: 0;
 }
 
-
+.text-light {
+    font-weight: 300;
+}
 
 .text-regular {
-    position: absolute;
-    color: white;
-    font-family: 'Work Sans', sans-serif;
     font-weight: 400;
-    font-size: 17pt;
+}
+
+.text-semibold {
+    font-weight: 600;
+}
+
+.text-bold {
+    font-weight: 700;
 }
 
 .text-extrabold {
-    position: absolute;
-    color: white;
-    font-family: 'Work Sans', sans-serif;
     font-weight: 800;
+}
+
+
+.text-small {
+    font-size: 1rem;
+}
+
+
+.text-big {
+    font-size: 2.063rem;
+    line-height: 2.65rem;
 }
 
 .title {
@@ -153,4 +182,93 @@ body {
 .content-section {
     margin-top: 60px; /* Adjust based on the height of your navbar */
     padding: 20px;
+}
+
+p {
+    padding-bottom: 18px;
+}
+
+.text-azul {
+    color: var(--azul);
+}
+
+.text-branco {
+    color: var(--branco);
+}
+
+.text-preto {
+    color: var(--preto);
+}
+
+
+
+
+
+.float-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.letter-intro-animate {
+    position: absolute;
+    width: 13%;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    transform-origin: top left;
+    z-index: 1;
+    user-select: none;
+}
+
+@keyframes floatAnimation1 {
+    0% {
+        transform: translate(65vw, 0);
+    }
+    25% {
+        transform: translate(45vw, 30vh);
+    }
+    50% {
+        transform: translate(15vw, 50vh);
+    }
+    75% {
+        transform: translate(0vw, 15vh);
+    }
+    100% {
+        transform: translate(65vw, 0);
+    }
+}
+
+@keyframes floatAnimation2 {
+    0% {
+        transform: translate(50vw, 30vh);
+    }
+    25% {
+        transform: translate(0vw, 40vh);
+    }
+    50% {
+        transform: translate(20vw, 0vh);
+    }
+    75% {
+        transform: translate(85vw, 60vh);
+    }
+    100% {
+        transform: translate(50vw, 30vh);
+    }
+}
+
+@keyframes floatAnimation3 {
+    0% {
+        transform: translate(0vw, 15vh);
+    }
+    25% {
+        transform: translate(30vw, 65vh);
+    }
+    50% {
+        transform: translate(65vw, 20vh);
+    }
+    75% {
+        transform: translate(30vw, 40vh);
+    }
+    100% {
+        transform: translate(0vw, 15vh);
+    }
 }

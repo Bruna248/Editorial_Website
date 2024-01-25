@@ -18,9 +18,16 @@
     margin-left: 8%;
 }*/
 
-nav {
-    background-color: var(--branco);
-    color: var(--preto);
+#AB{
+    position: absolute;
+    right: 8%;
+    align-self: center;
+    color: black;
+}
+
+.nav-bar {
+    background-color:var(--branco);
+    color:var(--preto);
     display: flex;
     justify-content: space-between;
     align-items: center;

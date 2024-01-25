@@ -48,17 +48,22 @@ div {
 
 }
 
+
 /*A ALTERAR COR E TAMANHO DE MARGEM ----------------------------------------------------------------------------------*/
 .box-row {
     position: relative;
     box-sizing: border-box;
-    /*background: red;*/
+    /*background: #f7f7fd;
     /*APAGAR SE NECESSÁRIO*/
     overflow: hidden;
     margin-bottom: 20px;
     /*ALTERAR SE NECESSÁRIO margem de baixo de cada row*/
 }
 
+.box-black-border {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
 /*--------------------------------------------------------------------------------------------------------------------*/
 
 
