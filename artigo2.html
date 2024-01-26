@@ -428,19 +428,165 @@
 
         <div class="wrap_artigo2_section">
             <div class="wrap container-fluid">
-                text
+                <div class="row">
+                    <div class="col-m-4 col-t-5 col-d-3">
+                        <div class="box-row text-content">
+                            <p class="first-letter">In this section, we present the developed model that generates
+                                new letter skeletons by interpolating existing ones. This process allows us to
+                                control the style of the resulting font by navigating the latent space. We explain
+                                all the steps taken, from the data collection and editing, passing through the
+                                development of the network architecture until the experimentation and analysis
+                                of the results.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="intro-container">
-                <div class="section-abs text-big text-bold upperCase text-azul">
+                <div class="sub-section text-big text-bold upperCase text-azul">
                     <div>3.1 Data</div>
                 </div>
             </div>
-            text
+            <div class="wrap container-fluid">
+                <div class="row">
+                    <div class="col-m-4 col-t-5 col-d-2">
+                    </div>
+                    <div class="col-m-4 col-t-5 col-d-3">
+                        <div class="box-row text-content">
+                            <p>One of the most important aspects of our approach is the collection and pre-processing of the dataset.
+                                We compile a collection of fonts in TTF font format with different weights from Google Fonts [6].
+                                This dataset is composed of five different font styles, Serif, Sans Serif, Display, Handwriting
+                                and Monospace. We opted not to use handwriting and display fonts because they were largely distinct
+                                from the rest, which is not desirable for our approach. Their ornamental component, sometimes not
+                                even filled, complicates the extraction of a representative skeleton. We only worked with 26
+                                characters (A-Z) of the Latin alphabet in their capital format. We believed that, as a work in
+                                progress, it would be best to create a dataset with a few characters. By just using capital letters,
+                                we are reducing the complexity of the approach.
+                                After selecting the fonts, we remained with 2623 TTF files. Then, we use the library Skelefont
+                                [16] * </p>
+                        </div>
+                    </div>
+                    <div class="col-m-4 col-t-5 col-d-3">
+                        <div class="box-row text-content">
+                                <p>to extract the skeleton of a font file. It applies the Zhang-Suen Thinning Algorithm [29]
+                                to derive the structural lines of a binary image. This library also allows the extraction of the
+                                points of the skeletons as well as the connections between them. It can also calculate the distance
+                                between the points and their closest borderline pixel, returning the stroke width of the original
+                                glyph at each of these points.</p>
+                                For each font, we rasterise the vectors that compose the skeleton of each glyph into a 64x64px
+                                black and white image. We also save all points’ positions and stroke width of the original glyph in a file to use later to generate the filling of the glyphs.
+                                Then, we repeat the process for the 26 letters of the alphabet (capital letters of the Latin alphabet
+                                only). This process is shown in the first three images of the diagram of Figure 2.
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-m-4 col-t-5 col-d-2"></div>
+                    <div class="col-m-4 col-t-5 col-d-6">
+                        <div class="box-row text-content">
+                            <a style="" href="https://github.com/tiagofmartins/skelefont">* https://github.com/tiagofmartins/skelefont</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
             <div class="intro-container">
-                <div class="section-abs text-big text-bold upperCase text-azul">
+                <div class="sub-section text-big text-bold upperCase text-azul">
                     <div>3.2 Network Architecture</div>
                 </div>
             </div>
+            <div class="wrap container-fluid">
+                <div class="row">
+                    <div class="col-m-4 col-t-5 col-d-3">
+                        <div class="box-row text-content">
+                            <p>The proposed model consists of a Conditional Variational Autoencoder (VAE) [11] and an Autoregressive
+                                sketch decoder. We used a VAE instead of a regular AE to allow us to manipulate the latent vectors more
+                                easily. The output of the VAE are parameters of distribution instead of vectors in the latent space.
+                                Moreover, the VAE imposes a constraint on this latent distribution forcing it to be a normal distribution
+                                which makes sure that the latent space is regularised. Therefore, we can create smoother transitions between
+                                different fonts when we sample the latent space moving from one cluster to the other. The Conditional part
+                                of the model allows us to input which letter we are encoding and decoding allowing us to</p>
+                        </div>
+                    </div>
+                    <div class="col-m-4 col-t-5 col-d-3">
+                        <div class="box-row text-content">
+                            <p>manipulate better which letter we are creating. Finally, as all the letters share the same
+                            latent space we can also explore
+                            the skeletons between different letters.<p>
+
+                            Figure 2 shows a diagram of the architecture used.
+                            In summary, the encoder employs a Convolutional Neural
+                                Network (CNN) that processes the greyscale images and encodes them into two 64-D latent vectors which consist
+                                of a set of means (μ) and standard deviations (σ) of a Gaussian representation. Through experimentation, we
+                                found that size 64 for the latent code presents the best results for our approach as it is a good trade-off,
+                                allowing us to compress all the characteristics of the letter while
+                        </div>
+                    </div>
+                    <div class="col-m-4 col-t-5 col-d-3">
+                        <div class="box-row text-content">
+                            keeping its tractability. Then, using
+                            the mean and standard deviation we take a sample from the Gaussian representation z to be used as input
+                            for both decoders, the image decoder and the sketch decoder. The image decoder consists of a set of convolutional
+                            transpose layers that receive the z vector and decodes it into a greyscale image which is compared with the
+                            original input. The sketch decoder consists of an LSTM [9] with dropout [25, 23] that transforms the z
+                            vector into a sequence of 30 points creating a single continuous path.
+                            This path is rasterised using a differentiable vector graphics library [13] to produce an
+                            output image. This library allows converting vector data to a raster representation while
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-m-4 col-t-5 col-d-4"></div>
+                    <div class="col-m-4 col-t-5 col-d-6">
+                        <div class="box-row">
+                            <div class="image-container">
+                                <img class="content-image" src="images/article2/img1.jpg" alt="letterContent" />
+                            </div>
+                            <div class="subtitle-container">
+                                <p>Fig. 2. Diagram of the architecture of our approach.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-m-4 col-t-5 col-d-3">
+                        <div class="box-row text-content">
+                            <p>facilitating backpropagation between the two domains. In the
+                                rasterisation process, we take the sequence of 30 x and y values and transform them to canvas coordinates.
+                                Then, we create a line that connects all points following the same order they are returned from the sketch
+                                decoder. The width of this path needs to be carefully selected to match the width of the original skeleton.
+                                If the width of the path is thinner than in the original images, at some part of the training process, the
+                                network stops trying to compose the whole letter and starts to fill the width of the letter in a zig-zag
+                                manner. However, if the line is thicker than in the original images we lose detail in the final skeleton.</p>
+
+
+                        </div>
+                    </div>
+                    <div class="col-m-4 col-t-5 col-d-3">
+                        <div class="box-row text-content">
+                            Finally, we render the produced path in a canvas as greyscale image
+                            that is compared with the original image.
+                            Although the standard VAE works at the pixel level, the output of our sketch decoder is a sequence of points,
+                            thus allowing the generation of scalable vector graphics that allow easier manipulation of the generated
+                            skeletons without losing quality. The loss value is calculated in a similar way as in the standard VAEs.
+                            We calculate the Binary Cross Entropy between the output images of the image decoder and the original inputs.
+                            We also calculate the Kullback-Leibler Divergence [12] to allow a regularised distribution of the latent space.
+                            Finally, we compute the Binary Cross Entropy between the original inputs and the output of the sketch decoder.
+                            To obtain the final loss value we add the three values together.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
         </div>
 
         <div class="relatedwork-container text-bold upperCase text-azul">
@@ -565,7 +711,7 @@
                                 reduce the z vectors from a size of 64 to two dimensions which can be translated to
                                 positions in a two-dimensional domain. For each position of a two-dimensional grid, we
                                 place the image of the best candidate. We select this candidate by finding the
-                                two-dimensional encoding closest to that position. Figure 4 presents the visualisation of the results. 
+                                two-dimensional encoding closest to that position. Figure 4 presents the visualisation of the results.
                             </p>
                         </div>
                     </div>
@@ -801,8 +947,8 @@
                                 created the dataset, by extracting the skeletons of the uppercase letters of the Latin
                                 alphabet for each font file that we selected, we saved the points of each skeleton and
                                 its stroke width to use posteriorly. With these values, we were able to interpolate the
-                                stroke width along with the generated skeleton. 
-                                
+                                stroke width along with the generated skeleton.
+
                             </p>
                         </div>
                     </div>
@@ -862,7 +1008,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="col-m-4 col-t-5 col-d-3">
                         <div class="box-row text-content">
                             <p>
@@ -880,7 +1026,7 @@
                             </p>
                         </div>
                     </div>
-                    
+
                     <div class="col-m-4 col-t-5 col-d-3">
                         <div class="box-row text-content">
                             <p>
