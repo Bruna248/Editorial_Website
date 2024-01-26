@@ -1,8 +1,4 @@
-* {
-    background-color: var(--branco);
-    vertical-align: baseline;
-}
-/*Teste*/
+
 
 .prevent-selected {
     -webkit-user-select: none;
