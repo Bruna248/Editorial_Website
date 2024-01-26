@@ -150,6 +150,14 @@ p.first-letter:first-child::first-letter {
     z-index: 1; /* Ensure the title is on top of the borders */
 }
 
+.sub-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
 .section-article {
     display: flex;
     align-items: center;
@@ -161,6 +169,10 @@ p.first-letter:first-child::first-letter {
 
 .border {
     position: absolute;
+}
+
+b{
+    font-weight: 600;
 }
 
 
@@ -213,3 +225,4 @@ p.first-letter:first-child::first-letter {
 .relatedwork-container .border:nth-child(22) { top: 22%; left: 54%; font-size: 7rem }
 .relatedwork-container .border:nth-child(23) { top: 7%; left: 59%; transform: rotate(180deg); font-size: 15rem }
 .relatedwork-container .border:nth-child(24) { top: 27%; left: 80%; font-size: 7rem }
+
