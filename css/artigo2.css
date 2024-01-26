@@ -135,7 +135,7 @@ p.first-letter:first-child::first-letter {
 
 
 
-
+.final-container,
 .relatedwork-container,
 .intro-container {
     position: relative;
@@ -225,3 +225,28 @@ b{
 .relatedwork-container .border:nth-child(22) { top: 22%; left: 54%; font-size: 7rem }
 .relatedwork-container .border:nth-child(23) { top: 7%; left: 59%; transform: rotate(180deg); font-size: 15rem }
 .relatedwork-container .border:nth-child(24) { top: 27%; left: 80%; font-size: 7rem }
+
+.final-container .border:nth-child(1) { top: 18%; left: 16%; transform: rotate(180deg); font-size: 4rem}
+.final-container .border:nth-child(2) { top: 12%; left: 20%; transform: rotate(180deg); font-size: 12rem; }
+.final-container .border:nth-child(3) { top: 28%; left: 13%; font-size: 7rem }
+.final-container .border:nth-child(4) { top: 28%; left: 30%; font-size: 6rem }
+.final-container .border:nth-child(5) { top: 10%; left: 35%; font-size: 12rem; }
+.final-container .border:nth-child(6) { top: 52%; left: 18%; transform: rotate(180deg); font-size: 12rem; }
+.final-container .border:nth-child(7) { top: 21%; left: 46%; transform: rotate(90deg); font-size: 10rem; }
+.final-container .border:nth-child(8) { top: 53%; left: 28%; transform: rotate(-90deg); font-size: 7rem}
+.final-container .border:nth-child(9) { top: 53%; left: 35%; font-size: 15rem }
+.final-container .border:nth-child(10) { top: 68%; left: 32%; transform: rotate(180deg); font-size: 4rem }
+.final-container .border:nth-child(11) { top: 54%; left: 46%; transform: rotate(90deg); font-size: 5rem }
+.final-container .border:nth-child(12) { top: 62%; left: 48%; transform: rotate(90deg); font-size: 12rem }
+.final-container .border:nth-child(13) { top: 50%; left: 72%; transform: rotate(180deg); font-size: 15rem }
+.final-container .border:nth-child(14) { top: 53%; left: 52%; font-size: 6rem }
+.final-container .border:nth-child(15) { top: 56%; left: 58%; transform: rotate(-90deg); font-size: 4rem }
+.final-container .border:nth-child(16) { top: 62%; left: 58%; transform: rotate(180deg); font-size: 9rem }
+.final-container .border:nth-child(17) { top: 52%; left: 65%; transform: rotate(90deg); font-size: 7rem }
+.final-container .border:nth-child(18) { top: 68%; left: 66%; font-size: 5rem }
+.final-container .border:nth-child(19) { top: 53%; left: 83%; transform: rotate(90deg); font-size: 5rem }
+.final-container .border:nth-child(20) { top: 16%; left: 70%; transform: rotate(-90deg); font-size: 12rem }
+.final-container .border:nth-child(21) { top: 16%; left: 51%; font-size: 5rem }
+.final-container .border:nth-child(22) { top: 22%; left: 54%; font-size: 7rem }
+.final-container .border:nth-child(23) { top: 7%; left: 59%; transform: rotate(180deg); font-size: 15rem }
+.final-container .border:nth-child(24) { top: 27%; left: 80%; font-size: 7rem }
