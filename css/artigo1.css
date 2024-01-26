@@ -10,8 +10,8 @@ body {
     width: 100%;
     text-align: center;
     background-color: var(--branco);
-    margin-bottom: 50px;
-    margin-top: 200px;
+    margin-bottom: 100px;
+    margin-top: 150px;
 }
 
 .nums {
@@ -50,7 +50,7 @@ body {
     flex-shrink: 0;
     width: 100%;
     /*Altura da div 100%*/
-    height: 650px;
+    height: 660px;
     margin-right: 50px;
     border-radius: 10px;
     background-color: var(--branco);
@@ -62,13 +62,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 100px;
+    /*font-size: 100px;*/
 }
 
 .slider .num {
     display: inline-flex;
     width: var(--numSize);
     height: var(--numSize);
+    padding: 20px;
     /*background: var(--branco);*/
     text-decoration: none;
     align-items: center;
@@ -77,16 +78,26 @@ body {
 
     margin: 0 10px 0.5rem 10px;
     position: relative;
-    color: var(--azul);
+    color: var(--preto);
 }
 
-.slider a:active {
+.slider .num:hover {
+    background-color: var(--azul);
+    color: var(--branco)
+}
+
+.slider .num:active {
+    /*font-weight: 800;*/
+}
+
+.slider .num:focus {
+    /*background-color: var(--preto);
+    color: var(--branco);*/
+}
+
+.slider .btn-selected {
     font-weight: 800;
-}
-
-.slider a:focus {
-    background-color: var(--preto);
-    color: var(--branco);
+    color: var(--azul);
 }
 
 /* Don't need button navigation */

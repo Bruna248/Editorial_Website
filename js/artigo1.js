@@ -31,3 +31,20 @@ function alteraAltura() {
 }
 
 window.addEventListener('resize', alteraAltura);
+
+
+let num = document.querySelectorAll(".num");
+console.log(num);
+
+for (let i = 0; i < num.length; i++) {
+    num[i].addEventListener("click", function () {
+
+        for (let j = 0; j < num.length; j++) {
+        if(num[j].classList.contains("btn-selected")){
+            num[j].classList.remove("btn-selected")
+        }}
+
+        console.log(num[i]);
+        num[i].classList.add("btn-selected");
+    })
+}
