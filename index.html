@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="pt">
 
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,16 +11,19 @@
     <link rel="stylesheet" href="css/geral.css">
     <link rel="stylesheet" href="css/flexbox_grid.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/artigos.css">
+    <link rel="stylesheet" href="css/artigo2.css">
 
     <title>Alta & baixa</title>
     <link rel="icon" type="image/png" href="images/icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
 </head>
 
 <body>
-    <div class="cover-wrapper" style="overflow: hidden; align-items: center;">
-        <img src="images/cover/blue_rectangle.svg" alt="Background color cover" class="cover-rectangle-color">
-        <img src="images/cover/blue_rectangle.svg" alt="Background color cover" class="cover-rectangle-color"
-            style="right: 9px">
+    <div class="cover-wrapper">
+        <img src="images/cover/blue_rectangle.svg" alt="Background color cover" class="cover-rectangle-color" style="left: 0">
+        <img src="images/cover/blue_rectangle.svg" alt="Background color cover" class="cover-rectangle-color" style="right: 0">
         <div id="image-container">
             <img id="back_blue" src="images/cover/back_blue.svg" alt="Background color cover"
                 class="background-image-color">
@@ -29,297 +32,166 @@
                 class="foreground-image">
         </div>
 
-        <div class="grid-container-wrapper" style="margin-left: 8%; margin-right: 4%">
+        <div class="grid-container-wrapper">
             <div class="grid-cover-container">
-                <div class="grid-item" id="item-1-1">
-                    <img class="line-small-cover" src="images/cover/letters/line_small_cover.svg"
-                        style="bottom: 0; right: 0" alt="line" />
-                    <img class="line-small-cover" src="images/cover/letters/line_small_cover.svg"
-                        style="top: 28%; right: 0" alt="line" />
-                </div>
-                <div class="grid-item"><img class="cover-letter-horizontal small-image"
-                        src="images/cover/letters/Artboard39.svg" style="left: 0" alt="letter" /></div>
+                <div class="grid-item" id="item-1-1"><img class="line-small-cover" src="images/cover/letters/line_small_cover.svg" style="bottom: 0; right: 0" alt="line" /><img class="line-small-cover" src="images/cover/letters/line_small_cover.svg" style="top: 28%; right: 0" alt="line" /></div>
+                <div class="grid-item"><img class="cover-letter-horizontal small-image" src="images/cover/letters/Artboard39.svg" style="left: 0" alt="letter" /></div>
                 <div class="grid-item"></div>
                 <div class="grid-item"></div>
-                <div class="text-extrabold title" style="top: 4%; right: 6%;">ALTA & baixa</div>
+                <div class="text-extrabold title text-branco" style="padding-top: 6.5vh; right: 3vh;position: absolute;">ALTA & baixa</div>
                 <div class="grid-item"></div>
 
-                <div class="grid-item grid-item-big">
-                    <img class="cover-letter-vertical" src="images/cover/letters/Artboard_38.svg" style="width: 110%;"
-                        alt="letterBIG" />
-                </div>
-                <div class="grid-item">
-                    <img class="cover-letter-vertical" src="images/cover/letters/Artboard_37.svg"
-                        style="max-height: 100%; left: 8%;" alt="letter" />
-                    <img class="cover-letter-vertical" src="images/cover/letters/Artboard_34.svg"
-                        style="max-height: 100%; right: 0;" alt="letter" />
-                </div>
-                <div class="grid-item">
-                    <img class="cover-letter-horizontal" src="images/cover/letters/Artboard35.svg"
-                        style="height: 55%; bottom: 0" alt="letter" />
-                </div>
-                <div class="grid-item">
-                </div>
+                <div class="grid-item grid-item-big"><img class="cover-letter-vertical" src="images/cover/letters/Artboard_38.svg" style="width: 110%;" alt="letterBIG" /></div>
+                <div class="grid-item"><img class="cover-letter-vertical" src="images/cover/letters/Artboard_37.svg" style="max-height: 100%; left: 8%;" alt="letter" /><img class="cover-letter-vertical" src="images/cover/letters/Artboard_34.svg" style="max-height: 100%; right: 0;" alt="letter" /></div>
+                <div class="grid-item"><img class="cover-letter-horizontal" src="images/cover/letters/Artboard35.svg" style="height: 55%; bottom: 0" alt="letter" /></div>
+                <div class="grid-item"></div>
                 <div class="grid-item"></div>
 
                 <div class="grid-item"></div>
-                <div class="grid-item" id="item-3-2">
-                    <img class="line-big-cover" src="images/cover/letters/line_big_cover.svg" style="top: 0;"
-                        alt="line" />
-                </div>
-                <div class="grid-item" style="overflow: hidden">
-                    <img class="cover-letter-horizontal" src="images/cover/letters/36.svg" style="right: 2%"
-                        alt="letter" />
-                </div>
-                <div class="grid-item" id="item-3-4">
-                    <img class="cover-letter-horizontal small-image" src="images/cover/letters/Artboard_31.svg"
-                        alt="letter" />
-                    <img class="line-small-cover" src="images/cover/letters/line_small_cover.svg"
-                        style="bottom: 0; left: 72%" alt="line" />
-                    <img class="line-small-cover" src="images/cover/letters/line_small_cover.svg"
-                        style="top: 28%; left: 72%" alt="line" />
-                </div>
-                <div class="grid-item" id="item-3-5">
-                </div>
-
-                <div class="grid-item">
-                </div>
-                <div class="grid-item" style="overflow: hidden">
-                    <img class="cover-letter-vertical" src="images/cover/letters/Artboard_40.svg" alt="letter" />
-                </div>
-                <div class="grid-item" id="item-4-3">
-                    <img class="cover-letter-vertical" src="images/cover/letters/Artboard_33.svg" alt="letter" />
-                </div>
-                <div class="grid-item" style="overflow: hidden">
-                    <img class="cover-letter-vertical" src="images/cover/letters/Artboard_28.svg"
-                        style="rotate: 270deg; left: -2%; width: 104%" alt="letter" />
-                </div>
-                <div class="grid-item" id="item-4-5" style="overflow: hidden">
-                    <img class="cover-letter-horizontal" src="images/cover/letters/Artboard_27.svg"
-                        style="rotate: -90deg; width: 72%; right: 9%; top: -50%; left: 10%" alt="letter" />
-                </div>
+                <div class="grid-item" id="item-3-2"><img class="line-big-cover" src="images/cover/letters/line_big_cover.svg" style="top: 0;" alt="line" /></div>
+                <div class="grid-item" style="overflow: hidden"><img class="cover-letter-horizontal" src="images/cover/letters/Artboard_36.svg" style="right: 2%" alt="letter" /></div>
+                <div class="grid-item" id="item-3-4"><img class="cover-letter-horizontal small-image" src="images/cover/letters/Artboard_31.svg" alt="letter" /><img class="line-small-cover" src="images/cover/letters/line_small_cover.svg" style="bottom: 0; left: 71%" alt="line" /><img class="line-small-cover" src="images/cover/letters/line_small_cover.svg" style="top: 28%; left: 71%" alt="line" /></div>
+                <div class="grid-item" id="item-3-5"></div>
 
                 <div class="grid-item"></div>
-                <div class="grid-item" style="overflow: hidden">
-                    <img class="cover-letter-vertical" src="images/cover/letters/Artboard_32.svg"
-                        style="width: 35%; top: -15%; right: 0" alt="letter" />
-                </div>
-                <div class="grid-item" style="overflow: hidden">
-                    <img class="cover-letter-vertical" src="images/cover/letters/Artboard_30.svg"
-                        style="width: 125%; top: -65%; left: 0" alt="letter" />
-                </div>
-                <div class="grid-item" id="item-5-4">
-                    <img class="line-big-cover" src="images/cover/letters/line_big_cover.svg" style="top: 0;"
-                        alt="line" />
-                    <img class="line-big-cover" src="images/cover/letters/line_big_cover.svg" style="bottom: 0;"
-                        alt="line" />
-                </div>
-                <div class="grid-item">
-                    <img class="cover-letter-vertical" src="images/cover/letters/Artboard_47.svg"
-                        style="width: 90%; top: -50%; left: 0" alt="letter" />
-                </div>
+                <div class="grid-item" style="overflow: hidden"><img class="cover-letter-vertical" src="images/cover/letters/Artboard_40.svg" alt="letter" /></div>
+                <div class="grid-item" id="item-4-3"><img class="cover-letter-vertical" src="images/cover/letters/Artboard_33.svg" alt="letter" /></div>
+                <div class="grid-item" style="overflow: hidden"><img class="cover-letter-vertical" src="images/cover/letters/Artboard_28.svg" style="rotate: 270deg; left: -2%; width: 104%" alt="letter" /></div>
+                <div class="grid-item" id="item-4-5" style="overflow: hidden"><img class="cover-letter-horizontal" src="images/cover/letters/Artboard_27.svg" style="rotate: -90deg; width: 72%; right: 9%; top: -50%; left: 10%" alt="letter" /></div>
+
+                <div class="grid-item"></div>
+                <div class="grid-item" style="overflow: hidden"><img class="cover-letter-vertical" src="images/cover/letters/Artboard_32.svg" style="width: 35%; top: -15%; right: 0" alt="letter" /></div>
+                <div class="grid-item" style="overflow: hidden"><img class="cover-letter-vertical" src="images/cover/letters/Artboard_30.svg" style="width: 125%; top: -65%; left: 0" alt="letter" /></div>
+                <div class="grid-item" id="item-5-4"><img class="line-big-cover" src="images/cover/letters/line_big_cover.svg" style="top: 0;" alt="line" /><img class="line-big-cover" src="images/cover/letters/line_big_cover.svg" style="bottom: 0;" alt="line" /></div>
+                <div class="grid-item"><img class="cover-letter-vertical" src="images/cover/letters/Artboard_47.svg" style="width: 90%; top: -50%; left: 0" alt="letter" /></div>
             </div>
         </div>
     </div>
 
-    <div class="nav-bar" id="navbar">
-        <a href="#" class="selected text-extrabold" id="artigo1">Artigo 1</a>
-        <a href="#" class="text-extrabold">Artigo 2</a>
-        <div class="text-extrabold title" id="AB">ALTA & baixa</div>
-    </div>
     <main>
 
+        <div class="float-container">
+            <img class="letter-intro-animate" style="animation-name: floatAnimation1;" src="images/cover/letters/Artboard_36_blue.svg" alt="letterIntro" />
+            <img class="letter-intro-animate" style="animation-name: floatAnimation2;" src="images/cover/letters/Artboard_33_blue.svg" alt="letterIntro" />
+            <img class="letter-intro-animate" style="animation-name: floatAnimation3;" src="images/cover/letters/Artboard_28_blue.svg" alt="letterIntro" />
+            <div class="wrap container-fluid">
+                <div class="row">
+                    <div class="col-m-4 col-t-5 col-d-2">
+                        <div class="box-row box-black-border text-small text-azul">
+                            </p>
+                            <p class="text-semibold">Nesta primeira edição, convidamo-vos a explorar connosco o mundo da
+                            tipografia e aprofundar os vossos conhecimentos sobre tipos de letra e composição.</p>
 
-        <div class="content-section" id="artigo1">
-            <h2>Artigo 1 Content</h2>
-            <p>This is the content of Artigo 1.</p>
+                            <p class="text-semibold">Agradecemos a todos pelo apoio e esperamos que desfrutem desta viagem tipográfica.</p>
+
+                            <p class="text-regular">Bruna Leitão,<br>Carolina Simões,<br>Leonor Domingues,<br>Teresa Fernandes</p>
+                            <p class="text-regular">Editor-Chefe,<br>Revista "Alta Baixa"</p></div>
+                    </div>
+                    <div class="col-m-1 col-t-4 col-d-8">
+                        <div class="box-row text-big">
+                            <p>Bem-vindos à primeira edição da <b class="text-bold">REVISTA "Alta Baixa"</b>! O nosso nome reflete a nossa ligação com a tipografia e a cidade de Coimbra. Somos estudantes do curso de Design e Multimédia, e esta revista é o nosso projeto do Lab. Design Editorial.</p>
+
+                            <p>"Alta Baixa" é uma revista que explora a tipografia em todos os seus aspetos, desde a sua história até às mais recentes inovações tecnológicas.</p>
+
+                            Uma investigação acerca dos elementos que conferem fascínio à tipografia, bem como examinar a maneira pela qual o design desempenha um papel fundamental na comunicação.
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="grid-container">
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
-            <div class="grid-item"></div>
+        <header>
+            <nav class="nav-bar" id="navbar">
+                <div class="ul">
+                    <a href="artigo1.html">Artigo 1</a>
+                    <a href="artigo2.html">Artigo 2</a>
+                </div>
+                <div id="AB" class="selected"><a href="index.html">ALTA & baixa </a></div>
+            </nav>
+        </header>
+
+
+        <div class="LP_wrap_artigo1">
+            <div class="contain">
+                <div class="text-background prevent-selected">THIRTEEN WAYS OF LOOKING AT A TYPEFACE MICHAEL</div>
+            </div>
+            <div class="wrap container-fluid">
+                <div class="row">
+                    <div class="col-m-5 col-t-10 col-d-6">
+                        <div class="box-row title-author box-black-border">
+                            <div class="title-article"> Thirteen Ways of Looking at a Typeface</div>
+                            <div class="author"> Michael Bierut </div>
+                        </div>
+                    </div>
+                    <div class="col-m-5 col-t-10 col-d-4"></div>
+                </div>
+                <div class="row">
+                    <div class="col-m-1 col-t-4 col-d-4">
+                        <div class="box-row"></div>
+                    </div>
+                    <div class="col-m-4 col-t-5 col-d-4">
+                        <div class="box-row text">
+                            <p>For the first ten years of my career, I worked for Massimo Vignelli, a designer
+                                who is legendary for using a very limited number of typefaces. Between 1980 and 1990, most
+                                of my
+                                projects were set in five fonts: Helvetica (naturally), Futura, Garamond no.3, Century
+                                Expanded,
+                                and, of course, Bodoni. </p>
+                            <p>For Massimo, this was an ideological choice, an ethical imperative. "In the ne...</p>
+                            <a href="artigo1.html">Ver artigo na íntegra</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="LP_wrap_artigo2">
+            <div class="contain2"><div class="text-background prevent-selected">UsingAuto encodersto Generate Skeleton-based Typography UsingAuto</div></div>
+            <div class="space"/>
+            <div class="wrap container-fluid">
+                <div class="row">
+                    <div class="col-m-5 col-t-10 col-d-2"></div>
+                    <div class="col-m-5 col-t-10 col-d-8">
+                        <div class="box-row title-author box-black-border">
+                            <div class="title-article"> Using Autoencoders to Generate Skeleton-based Typography</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-m-5 col-t-10 col-d-5">
+                        <div class="box-row text">
+                            <div class="author"> Jéssica Parente*, Luís Gonçalo*, Tiago Martins, João Miguel Cunha, João Bicker and Penousal Machado</div>
+                            <div class="disclaimer"> *These authors contributed equally to this work</div>
+                        </div>
+                    </div>
+                    <div class="col-m-5 col-t-10 col-d-5"></div>
+                </div>
+                <div class="row">
+                    <div class="col-m-5 col-t-10 col-d-4"></div>
+                    <div class="col-m-1 col-t-4 col-d-4">
+                        <div class="box-row text">
+                            <p class="text-big text-bold upperCase">ABSTRACT</p>
+                            <p>Type Design is a domain that multiple times has profited from the emergence of new tools
+                                and technologies. The transformation of type from physical to digital, the dissemination
+                                of font design software and the adoption of web typography make type design better known
+                                and more accessible. This domain has received an even greater push with the increasing adoption
+                                of generative to...</p>
+                            <a href="artigo2.html">Ver artigo na íntegra</a>
+                        </div>
+                    </div>
+                    <div class="col-m-5 col-t-10 col-d-2"></div>
+                </div>
+            </div>
         </div>
 
 
-        <!--<div id="svg-container">
-    <img id="38" src="images/cover/letters/Artboard_38.svg" alt="First SVG">
-    <img id="b2" src="images/cover/letters/b2.svg" alt="Second SVG" style="display: none;">
-    <img id="b3" src="images/cover/letters/b2.svg" alt="Second SVG" style="display: none;">
-</div>
-
-<script>
-    document.getElementById('svg-container').addEventListener('mouseover', function() {
-        document.getElementById('38').style.display = 'none';
-        document.getElementById('b2').style.display = 'block';
-    });
-    document.getElementById('svg-container').addEventListener('mouseout', function() {
-        document.getElementById('38').style.display = 'block';
-        document.getElementById('b2').style.display = 'none';
-    });
-</script>-->
-        <div class="content">
-            <h1>Hello World!</h1>
-            <p>This is my first webpage.</p>
-        </div>
     </main>
 
     <footer>
-
+        <div class="footer-container">
+            <div class="text-extrabold text-big">A&amp;b</div>
+            <div class="upperCase">Revista de Cultura Tipográfica</div>
+        </div>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
