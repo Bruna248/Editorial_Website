@@ -19,7 +19,7 @@
 .text-background {
     width: 150%;
 
-    color: var(--Azul, #2B3990);
+    color: var(--azul);
     font-size: 20.625rem;
     font-style: normal;
     font-weight: 800;
@@ -32,7 +32,7 @@
 }
 
 .title-article {
-    color: var(--Azul, #2B3990);
+    color: var(--azul);
     font-size: 5.2rem;
     font-style: normal;
     font-weight: 800;
@@ -40,7 +40,7 @@
 }
 
 .author {
-    color: var(--Preto, #0B1035);
+    color: var(--preto);
     margin-top: 42px;
     text-overflow: ellipsis;
     font-size: 1.6rem;
@@ -51,7 +51,7 @@
 
 .text {
     padding: 32px;
-    color: var(--Preto, #0B1035);
+    color: var(--preto);
     font-size: 1.25rem;
     font-style: normal;
     font-weight: 400;
