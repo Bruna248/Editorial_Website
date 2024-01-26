@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600;800&display=swap');
 
 body {
-    background-color: #ffffff;
+    background-color: var(--branco);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
