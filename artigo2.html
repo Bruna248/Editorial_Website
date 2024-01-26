@@ -429,9 +429,10 @@
         <div class="wrap_artigo2_section">
             <div class="wrap container-fluid">
                 <div class="row">
-                    <div class="col-m-4 col-t-5 col-d-3">
+                    <div class="col-m-4 col-t-5 col-d-2"></div>
+                    <div class="col-m-4 col-t-5 col-d-6">
                         <div class="box-row text-content">
-                            <p class="first-letter">In this section, we present the developed model that generates
+                            <p>In this section, we present the developed model that generates
                                 new letter skeletons by interpolating existing ones. This process allows us to
                                 control the style of the resulting font by navigating the latent space. We explain
                                 all the steps taken, from the data collection and editing, passing through the
@@ -453,7 +454,7 @@
                     </div>
                     <div class="col-m-4 col-t-5 col-d-3">
                         <div class="box-row text-content">
-                            <p>One of the most important aspects of our approach is the collection and pre-processing of the dataset.
+                            <p class="first-letter">One of the most important aspects of our approach is the collection and pre-processing of the dataset.
                                 We compile a collection of fonts in TTF font format with different weights from Google Fonts [6].
                                 This dataset is composed of five different font styles, Serif, Sans Serif, Display, Handwriting
                                 and Monospace. We opted not to use handwriting and display fonts because they were largely distinct
@@ -462,13 +463,12 @@
                                 characters (A-Z) of the Latin alphabet in their capital format. We believed that, as a work in
                                 progress, it would be best to create a dataset with a few characters. By just using capital letters,
                                 we are reducing the complexity of the approach.
-                                After selecting the fonts, we remained with 2623 TTF files. Then, we use the library Skelefont
-                                [16] * </p>
+                                After selecting the fonts, we remained with 2623 TTF files. Then, we use</p>
                         </div>
                     </div>
                     <div class="col-m-4 col-t-5 col-d-3">
                         <div class="box-row text-content">
-                                <p>to extract the skeleton of a font file. It applies the Zhang-Suen Thinning Algorithm [29]
+                                <p>the library Skelefont [16] * to extract the skeleton of a font file. It applies the Zhang-Suen Thinning Algorithm [29]
                                 to derive the structural lines of a binary image. This library also allows the extraction of the
                                 points of the skeletons as well as the connections between them. It can also calculate the distance
                                 between the points and their closest borderline pixel, returning the stroke width of the original
@@ -565,7 +565,7 @@
                         </div>
                     </div>
                     <div class="col-m-4 col-t-5 col-d-3">
-                        <div class="box-row text-content">
+                        <div class="box-row text-content" style="margin-top:150px;">
                             Finally, we render the produced path in a canvas as greyscale image
                             that is compared with the original image.
                             Although the standard VAE works at the pixel level, the output of our sketch decoder is a sequence of points,
