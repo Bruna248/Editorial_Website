@@ -161,11 +161,9 @@ body {
     font-weight: 800;
 }
 
-
 .text-small {
     font-size: 1rem;
 }
-
 
 .text-big {
     font-size: 2.063rem;
@@ -197,8 +195,6 @@ p {
 .text-preto {
     color: var(--preto);
 }
-
-
 
 
 
@@ -298,7 +294,7 @@ p {
 }
 
 
-footer {
+/*footer {
     background-color: var(--azul);
     color: var(--branco);
     padding: 15px 0;
@@ -314,4 +310,4 @@ footer {
 
 .upperCase {
     text-transform: uppercase;
-}
+}*/
