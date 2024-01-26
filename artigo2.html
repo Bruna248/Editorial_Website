@@ -8,6 +8,7 @@
     <link href="css/flexbox_grid.css" rel="stylesheet">
     <link href="css/artigos.css" rel="stylesheet">
     <link href="css/artigo2.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -22,42 +23,484 @@
     </header>
 
     <main>
-        <div class="contain2"><div class="text-background prevent-selected">UsingAuto encodersto Generate Skeleton-based Typography UsingAuto</div></div>
-        <div class="wrap container-fluid">
-            <!--ALTERAR COLUNAS ---------------------------------------------------------------------------------------- -->
-            <div class="row">
-                <div class="col-m-5 col-t-10 col-d-2"></div>
-                <div class="col-m-5 col-t-10 col-d-8">
-                    <div class="box-row title-author">
-                        <div class="title-article"> Using Autoencoders to Generate Skeleton-based Typography</div>
+        <div class="wrap_artigo2_FstPage">
+            <div class="contain3"><div class="text-background prevent-selected">UsingAuto encodersto Generate Skeleton-based Typography UsingAuto</div></div>
+            <div class="wrap container-fluid">
+                <div class="row">
+                    <div class="col-m-5 col-t-10 col-d-2"></div>
+                    <div class="col-m-5 col-t-10 col-d-8">
+                        <div class="box-row title-author box-black-border">
+                            <div class="title-article"> Using Autoencoders to Generate Skeleton-based Typography</div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="row nomes">
-                <div class="col-m-5 col-t-10 col-d-6"></div>
-                <div class="col-m-5 col-t-10 col-d-4">
-                    <div class="box-row author-disclaimer">
-                        <div class="author"> Jéssica Parente*, Luís Gonçalo*, Tiago Martins, João Miguel Cunha, João Bicker and Penousal Machado</div>
-                        <div class="disclaimer"> *These authors contributed equally to this work</div>   
+                <div class="row nomes">
+                    <div class="col-m-5 col-t-10 col-d-6"></div>
+                    <div class="col-m-5 col-t-10 col-d-4">
+                        <div class="box-row author-disclaimer">
+                            <div class="author"> Jéssica Parente*, Luís Gonçalo*, Tiago Martins, João Miguel Cunha, João Bicker and Penousal Machado</div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-m-1 col-t-4 col-d-4">
-                    <div class="box-row"></div>
+                <div class="row">
+                    <div class="col-m-1 col-t-4 col-d-4">
+                        <div class="box-row"></div>
+                    </div>
+                    <div class="col-m-4 col-t-5 col-d-6">
+                        <div class="box-row extra-text">{jparente, lgoncalo, tiagofm, jmacunha, bicker, machado} @dei.uc.pt</div>
+                    </div>
                 </div>
-                <div class="col-m-4 col-t-5 col-d-6">
-                    <div class="box-row extra-text">{jparente, lgoncalo, tiagofm, jmacunha, bicker, machado} @dei.uc.pt</div>
-                </div>
-            </div>
 
-            <div class="row">
-                <div class="col-m-1 col-t-4 col-d-3">
-                    <div class="box-row extra-text">University of Coimbra, CISUC,<br> Department of Informatics Engineering</div>
+                <div class="row">
+                    <div class="col-m-1 col-t-4 col-d-4">
+                        <div class="box-row extra-text">
+                            University of Coimbra, CISUC,<br> Department of Informatics Engineering
+                            <div class="disclaimer"> *These authors contributed equally to this work</div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <!-- ------------------------------------------------------------------------------------------------------- -->
         </div>
+
+        <div class="intro-container">
+            <div class="section-abs text-big text-bold upperCase text-azul">
+                <div>Abstract</div>
+            </div>
+        </div>
+
+        <div class="wrap_artigo2_Abs">
+            <div class="contain3"><div class="text-background prevent-selected">UsingAuto encodersto Generate Skeleton-based Typography UsingAuto</div></div>
+            <div class="wrap container-fluid">
+                <div class="row">
+                    <div class="col-m-4 col-t-5 col-d-4">
+                        <div class="box-row text-content">
+                            Type Design is a domain that multiple times has profited from the emergence of new tools and technologies.
+                        </div>
+                    </div>
+                    <div class="col-m-1 col-t-4 col-d-6">
+                        <div class="box-row"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-m-1 col-t-4 col-d-3">
+                        <div class="box-row"></div>
+                    </div>
+                    <div class="col-m-1 col-t-4 col-d-3">
+                        <div class="box-row text-content">
+                            The transformation of type from physical to digital, the dissemination of font design
+                                software and the adoption of web typography make type design better known and more
+                                accessible. This domain has received an even greater push with the increasing adoption of
+                                generative tools to create more diverse and exper- imental fonts. Nowadays, with the
+                                application of Machine Learning to various domains, typography has also been influenced
+                                by it. In this work, we produce a dataset by extracting letter skeletons from a collection of
+                        </div>
+                    </div>
+                    <div class="col-m-1 col-t-4 col-d-3">
+                        <div class="box-row text-content start-from-middle">
+                            existing fonts. Then we trained a Variational Autoencoder and a Sketch Decoder to learn to
+                                create these skeletons that can be used to generate new ones by exploring the latent space.
+                                This process also allows us to control the style of the resulting skeletons and interpolate
+                                between differ- ent characters. Finally, we developed new glyphs by filling the generated
+                                skeletons based on the original letters’ stroke width and showing some applications of the results.
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-m-4 col-t-5 col-d-2">
+                        <div class="box-row text box-black-border">
+                            <p class="keywords upperCase text-bold">Keywords</p>
+                            <p class="keywords">Type Design</p>
+                            <p class="keywords">Variational Autoencoder</p>
+                            <p class="keywords">Skeleton-basis Typography</p>
+                        </div>
+                    </div>
+                    <div class="col-m-1 col-t-4 col-d-6">
+                        <div class="box-row"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="intro-container text-bold upperCase text-azul">
+            <div class="border">1</div>
+            <div class="border">1</div>
+            <div class="border">1</div>
+            <div class="border">1</div>
+            <div class="border">I</div>
+            <div class="border">I</div>
+            <div class="border">1</div>
+            <div class="border">1</div>
+            <div class="border">1</div>
+            <div class="border">1</div>
+            <div class="border">1</div>
+            <div class="border">I</div>
+            <div class="border">1</div>
+            <div class="border">I</div>
+            <div class="border">1</div>
+            <div class="border">1</div>
+            <div class="border">I</div>
+            <div class="border">I</div>
+            <div class="border">I</div>
+            <div class="border">1</div>
+            <div class="border">I</div>
+            <div class="border">1</div>
+            <div class="border">1</div>
+            <div class="border">1</div>
+            <div class="section-article title-article text-bold upperCase text-azul">
+                <div>Introduction</div>
+            </div>
+        </div>
+
+        <div class="wrap_artigo2_Intro">
+            <div class="wrap container-fluid">
+                <div class="row">
+                    <div class="col-m-1 col-t-4 col-d-4">
+                        <div class="box-row section-article">
+                            <div class="image-container">
+                                <img class="content-image" src="images/article2/img0.jpg" alt="letterContent" />
+                            </div>
+                            <div class="subtitle-container">
+                                <p>Fig. 1. <a class="text-semibold">Interpolation of the skeleton</a> and
+                                    stroke width from two existing A’s (light
+                                    blue and red) resulting in a new A (dark
+                                    blue).</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-m-4 col-t-5 col-d-3">
+                        <div class="box-row text-content">
+                            <p class="first-letter">The design of type has undergone numerous changes over time [4]. In the early years,
+                            typography was seen as a system made up of a series of rules. The artistic movements that
+                            arrived at the beginning of the twentieth century rejected the historical forms and
+                            transformed outdated aspects of visual language and expression. However, projects that
+                            combined software, arts and design only appeared a few years later with the proliferation
+                            of personal computers, allowing programming to reach a wider audience. Thanks to all these
+                            changes, the tools to design type changed, and new possibilities for typographic experimentation
+                            appeared, resulting in <a class="text-semibold">(i) grammar-based techniques</a> that explore the principle of database
+                            amplification (e.g. [2]); <a class="text-semibold">(ii) evolutionary systems</a> that breed design solutions under the
+                            direction of a designer (e.g. [22, 15]); <a class="text-semibold">(iii)</a> or even, <a class="text-semibold">Machine Learning (ML) systems</a> that
+                            learn the glyphs features to build new ones (e.g. [14]) [18]. These computational approaches
+                            can also be helpful as a starting point of inspiration.</p>
+                        </div>
+                    </div>
+                    <div class="col-m-4 col-t-5 col-d-3">
+                        <div class="box-row text-content">
+                            <p>Most emerging fonts continue to be developed by type designers who study the shape of each
+                                letter and its design with great precision, despite the emergence of these new possibilities.
+                                Type design is a hugely complex discipline, and its expertise ensures typography quality [28].
+                                Moreover, with the proliferation of web typography and online reading, the use of variable
+                                and dynamic fonts has increased, allowing more options for font designers and font users.
+                                Additionally, visual identities created nowadays are becoming more dynamic [17]. Museums,
+                                institutions, organisations, events and media increasingly rely on this type of identity.
+                                Consequently, designers should adapt their work to these new possibilities by creating
+                                dynamic identities with animations and mutations. Even though new computer systems create
+                                expressive and out-of-the-box results, they do not have the knowledge of an expert. But
+                                this is also an advantage, allowing nonarbitrary exploitation that extends the range of
+                                possibilities. It is necessary to create a balance to take advantage of the computational
+                                systems and the expert labour.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-m-4 col-t-5 col-d-3">
+                        <div class="box-row text-content">
+                            <p>Moreover, most generative systems that design type focus on the letters’ filling and
+                                don’t see the structure of a glyph as a variation parameter.</p>
+                            <p>To overcome these limitations, we propose an Autoregressive model [9] that creates new
+                                glyph skeletons by the interpolation of existing ones. Our skeletonbased approach uses
+                                glyphs skeletons of existing fonts as input to ensure the quality of the generated
+                                results. The division of the structure and the filling of the glyphs add variability
+                                to the results. Different glyphs can be created by just changing the structure or the
+                                filling. The proposed approach enables the exploration of a continuous range of font
+                                styles by navigating on the Autoencoder (AE) learnt latent space. With the results of
+                                this approach, it is also possible to apply different filling methods that use the
+                                stroke width of the original letters to produce new glyphs (see Figure 1).
+                               The remainder of this paper is divided into three sections. The following section,
+                                Related Work, analyzes related</p>
+                        </div>
+                    </div>
+                    <div class="col-m-4 col-t-5 col-d-3">
+                        <div class="box-row text-content">
+                            <p>projects in the domain of computational typography with Artificial Neural Networks (ANNs).
+                                The second section, Approach, describes the construction of the used dataset and
+                                explains the training process. Then, in the Results section, we present and discuss
+                                the different experimentations performed and the obtained results. In this section,
+                                we also present a set of different possible applications of the outputs of our system.
+                                In the final section, Conclusion and Discussion, we draw some conclusions and lay out future work.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-m-4 col-t-5 col-d-4">
+                        <div class="box-row text-right-bottom">
+                            <p class="text-big text-bold text-azul upperCase">"Different glyphs<br>can be created by<br>just changing the structure or the filling."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-m-1 col-t-4 col-d-7">
+                        <div class="box-row"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="relatedwork-container text-bold upperCase text-azul">
+            <div class="border">2</div>
+            <div class="border">R</div>
+            <div class="border">2</div>
+            <div class="border">2</div>
+            <div class="border">R</div>
+            <div class="border">2</div>
+            <div class="border">2</div>
+            <div class="border">2</div>
+            <div class="border">2</div>
+            <div class="border">R</div>
+            <div class="border">R</div>
+            <div class="border">2</div>
+            <div class="border">2</div>
+            <div class="border">R</div>
+            <div class="border">2</div>
+            <div class="border">2</div>
+            <div class="border">R</div>
+            <div class="border">2</div>
+            <div class="border">2</div>
+            <div class="border">R</div>
+            <div class="border">R</div>
+            <div class="border">2</div>
+            <div class="border">2</div>
+            <div class="border">R</div>
+            <div class="section-article title-article text-bold upperCase text-azul">
+                <div>Related Work</div>
+            </div>
+        </div>
+
+
+
+        <div class="wrap_artigo2_section">
+            <div class="wrap container-fluid">
+                <div class="row">
+                    <div class="col-m-4 col-t-5 col-d-3">
+                        <div class="box-row text-content">
+                            <p class="first-letter">Over time, the methods and technologies available for type design
+                                have improved and designers have to evolve and adapt their process of thinking in accordance.
+                                Generative Adversarial Networks (GANs) have revealed impressive advances, presenting
+                                high-resolution images nearly indistinguishable from the real ones. In the typographic
+                                field, they are helpful when one wishes to obtain coherent glyphs in a typeface. When
+                                designing a typeface, one has to simultaneously seek an aesthetically appealing result
+                                and coherence among the different glyphs. This can be facilitated by exploring the
+                                similarities between the same letter present across diverse fonts, and the transferred
+                                stylistic elements within the same font [5]. Balashova et al. [2] develop a stroke-based
+                                geometric model for glyphs, a fitting procedure to re-parametrise arbitrary fonts to capture
+                                these correlations. The framework uses a manifold learning
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-m-4 col-t-5 col-d-3">
+                        <div class="box-row text-content">
+                            <p>technique that allows for
+                                interactively improving the fit quality and interpolating, adding or removing stylistic
+                                elements in existing fonts. Campbell and Kautz [3] develop a similar contour-based framework
+                            allowing the editing of a glyph and the propagation of stylistic elements across the entire
+                            alphabet. Phan et al. [19] and Suveeranont and Igarashi [26] present two different frameworks
+                            that give one or more outline-based glyphs of several characters as input, producing a
+                            complete typeface that bears a similar style to the inputs. Rehling and Hofstadter [21]
+                            use one or more grid-based lowercase letters to generate the rest of the Roman alphabet,
+                            creating glyphs that share different style features. Azadi et al. [1] develop an end-to-end
+                            stacked conditional GAN model to generate a set of highly-stylised glyph images following
+                                a consistent style from very few examples.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-m-4 col-t-5 col-d-3"></div>
+                    <div class="col-m-4 col-t-5 col-d-3">
+                        <div class="box-row text-content">
+                            <p>We can also imitate the behaviour of a variable font using Recurrent Neural Networks (RNNs)
+                                and interpolate to obtain intermediate results. Lopes et al. [14] model the drawing
+                                process of fonts by building sequential generative models of vector graphics. Their
+                                model provides a scale-invariant representation of imagery. The latent representation
+                                may be systematically exploited to achieve style propagation. Shamir and Rappoport [24]
+                                present a parametric featurebased font design approach. The development of a visual
+                                design system and the use of constraints for preserving the designer’s intentions create
+                                a more natural environment in which high-level parametric behaviours can be defined. By
+                                changing the glyph parameters they create several family instances. Also, outside the
+                                typographic field, there are some good</p>
+                        </div>
+                    </div>
+                    <div class="col-m-4 col-t-5 col-d-3">
+                        <div class="box-row text-content">
+                            <p> examples exploring the latent space. Sketch-RNN
+                                [7] is an RNN able to construct stroke-based drawings. The network produces sketches of
+                                common objects in a vector format and explores the latent space interpolation of various
+                                vector images. There is also increased attention to these networks and their application
+                                to facilitate the use and combination of fonts. A usual way to combine different fonts
+                                is by using fonts from the same family or created by the same designer. Another way is to
+                                find fonts that match x-height and ascenders/descenders. Fontjoy [20] is another tool to
+                                facilitate the process of mixing and matching typefaces and choosing fonts to use side by
+                                side. FontMap [8] and Font-VAE [10] are tools developed with the goal of discovering
+                                alternative fonts with the same aesthetics.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="relatedwork-frase">
+                <div class="box-row">
+                    <p class="title-article text-bold text-azul upperCase">Outline-based glyphs for typeface generations</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="relatedwork-container text-bold upperCase text-azul">
+            <div class="border">3</div>
+            <div class="border">A</div>
+            <div class="border">3</div>
+            <div class="border">3</div>
+            <div class="border">A</div>
+            <div class="border">3</div>
+            <div class="border">3</div>
+            <div class="border">3</div>
+            <div class="border">3</div>
+            <div class="border">A</div>
+            <div class="border">A</div>
+            <div class="border">3</div>
+            <div class="border">3</div>
+            <div class="border">A</div>
+            <div class="border">3</div>
+            <div class="border">3</div>
+            <div class="border">A</div>
+            <div class="border">3</div>
+            <div class="border">3</div>
+            <div class="border">A</div>
+            <div class="border">A</div>
+            <div class="border">3</div>
+            <div class="border">3</div>
+            <div class="border">A</div>
+            <div class="section-article title-article text-bold upperCase text-azul">
+                <div>Approach</div>
+            </div>
+        </div>
+
+        <div class="wrap_artigo2_section">
+            <div class="wrap container-fluid">
+                text
+            </div>
+            <div class="intro-container">
+                <div class="section-abs text-big text-bold upperCase text-azul">
+                    <div>3.1 Data</div>
+                </div>
+            </div>
+                text
+            <div class="intro-container">
+                <div class="section-abs text-big text-bold upperCase text-azul">
+                    <div>3.2 Network Architecture</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="relatedwork-container text-bold upperCase text-azul">
+            <div class="border">4</div>
+            <div class="border">R</div>
+            <div class="border">4</div>
+            <div class="border">4</div>
+            <div class="border">R</div>
+            <div class="border">4</div>
+            <div class="border">4</div>
+            <div class="border">4</div>
+            <div class="border">4</div>
+            <div class="border">R</div>
+            <div class="border">R</div>
+            <div class="border">4</div>
+            <div class="border">4</div>
+            <div class="border">R</div>
+            <div class="border">4</div>
+            <div class="border">4</div>
+            <div class="border">R</div>
+            <div class="border">4</div>
+            <div class="border">4</div>
+            <div class="border">R</div>
+            <div class="border">R</div>
+            <div class="border">4</div>
+            <div class="border">4</div>
+            <div class="border">R</div>
+            <div class="section-article title-article text-bold upperCase text-azul">
+                <div>Results</div>
+            </div>
+        </div>
+
+        <div class="wrap_artigo2_section">
+            <div class="wrap container-fluid">
+                text
+            </div>
+            <div class="intro-container">
+                <div class="section-abs text-big text-bold upperCase text-azul">
+                    <div>4.1 Reconstruction of skeletons</div>
+                </div>
+            </div>
+            text
+            <div class="intro-container">
+                <div class="section-abs text-big text-bold upperCase text-azul">
+                    <div>4.2 Latent representation of font style</div>
+                </div>
+            </div>
+            text
+            <div class="intro-container">
+                <div class="section-abs text-big text-bold upperCase text-azul">
+                    <div>4.3 Exploring the latent space</div>
+                </div>
+            </div>
+            text
+            <div class="intro-container">
+                <div class="section-abs text-big text-bold upperCase text-azul">
+                    <div>4.4 Transforming skeletons into glyphs</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="relatedwork-container text-bold upperCase text-azul">
+            <div class="border">5</div>
+            <div class="border">C</div>
+            <div class="border">5</div>
+            <div class="border">5</div>
+            <div class="border">D</div>
+            <div class="border">5</div>
+            <div class="border">5</div>
+            <div class="border">5</div>
+            <div class="border">5</div>
+            <div class="border">C</div>
+            <div class="border">D</div>
+            <div class="border">5</div>
+            <div class="border">5</div>
+            <div class="border">C</div>
+            <div class="border">5</div>
+            <div class="border">5</div>
+            <div class="border">C</div>
+            <div class="border">5</div>
+            <div class="border">5</div>
+            <div class="border">D</div>
+            <div class="border">D</div>
+            <div class="border">5</div>
+            <div class="border">5</div>
+            <div class="border">C</div>
+            <div class="section-article title-article text-bold upperCase text-azul">
+                <div>Conclusion and Discussion</div>
+            </div>
+        </div>
+
+        <div class="wrap_artigo2_section">
+            <div class="wrap container-fluid">
+                text
+            </div>
+        </div>
+
+
+
+
+
+
+
     </main>
 
     <footer>

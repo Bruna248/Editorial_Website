@@ -3,6 +3,10 @@
     line-height: 30px;
 }
 
+p.keywords {
+    padding-bottom: 12px;
+}
+
 .contain2 {
     position: absolute;
     width: 100%;
@@ -16,6 +20,16 @@
     height: 100%;
     width: 100%;
     transform: rotate(-90deg);
+}
+
+.contain3 {
+    position: absolute;
+    left: -20%;
+    bottom: 11%;
+    height: 100%;
+    width: 100%;
+    transform: rotate(-90deg);
+    z-index: -3;
 }
 
 .author-disclaimer {
@@ -32,3 +46,170 @@
     padding: 20px 30px 20px 40px;
     font-size: 1.2rem;
 }
+
+.text-content {
+    padding: 15px 15px 15px 15px;
+    font-size: 1.1rem;
+    hyphens: auto;
+}
+
+
+.text-right-bottom {
+    position: relative;
+    height: 100%; /* Set a height for the parent container */
+}
+
+.text-right-bottom p {
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    margin: 0; /* Optional: Remove default margin for the paragraph */
+    width: 100%; /* Optional: Ensure the paragraph takes the full width of the container */
+}
+
+.wrap_artigo2_FstPage {
+    position: relative;
+    height: 125vh;
+    overflow: hidden;
+    margin-top: 10vh;
+}
+
+.wrap_artigo2_Abs {
+    position: relative;
+    height: 125vh;
+    overflow: hidden;
+    margin-bottom: 10vh;
+}
+
+.wrap_artigo2_section {
+    position: relative;
+    overflow: hidden;
+}
+
+.start-from-middle {
+    margin-top: 19.8vh; /* Adjust the value as needed to control the spacing */
+}
+
+.box-row.section-article {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    text-align: center; /* Center text within the container */
+}
+
+.image-container {
+    max-width: 100%; /* Set the maximum width to 100% of the container */
+    max-height: 80%; /* Set the maximum height to 100% of the container */
+    height: auto; /* Ensure the aspect ratio is maintained */
+    display: block; /* Remove extra space below the image */
+    margin: 0 auto; /* Center the image horizontally within the container */
+}
+
+.subtitle-container {
+    margin-top: 20px; /* Adjust the margin as needed to create space between image and text */
+    width: 60%;
+    color: var(--azul);
+    font-size: 0.875rem;
+}
+
+
+.content-image {
+    max-width: 100%; /* Set the maximum width to 100% of the container */
+    max-height: 100%; /* Set the maximum height to 100% of the container */
+    height: auto; /* Ensure the aspect ratio is maintained */
+    display: block; /* Remove extra space below the image */
+    margin: 0 auto; /* Center the image horizontally within the container */
+}
+
+p.first-letter:first-child::first-letter {
+    padding-right: 14px;
+
+    -webkit-initial-letter: 3;
+    initial-letter: 3;
+}
+
+.relatedwork-frase {
+    display: flex;
+    text-align: center;
+    width: 100vw;
+}
+
+
+
+
+.relatedwork-container,
+.intro-container {
+    position: relative;
+}
+
+.section-abs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    position: relative;
+    z-index: 1; /* Ensure the title is on top of the borders */
+}
+
+.section-article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+    position: relative;
+    z-index: 1; /* Ensure the title is on top of the borders */
+}
+
+.border {
+    position: absolute;
+}
+
+
+.intro-container .border:nth-child(1) { top: 40%; left: 24%; transform: rotate(180deg); font-size: 5rem}
+.intro-container .border:nth-child(2) { top: 15%; left: 20%; transform: rotate(180deg); font-size: 12rem; }
+.intro-container .border:nth-child(3) { top: 30%; left: 15%; font-size: 7rem }
+.intro-container .border:nth-child(4) { top: 28%; left: 30%; font-size: 6rem }
+.intro-container .border:nth-child(5) { top: 12%; left: 35%; font-size: 12rem; }
+.intro-container .border:nth-child(6) { top: 46%; left: 18%; transform: rotate(180deg); font-size: 12rem; }
+.intro-container .border:nth-child(7) { top: 18%; left: 43%; transform: rotate(90deg); font-size: 12rem; }
+.intro-container .border:nth-child(8) { top: 53%; left: 28%; transform: rotate(-90deg); font-size: 7rem}
+.intro-container .border:nth-child(9) { top: 53%; left: 35%; font-size: 15rem }
+.intro-container .border:nth-child(10) { top: 68%; left: 32%; transform: rotate(180deg); font-size: 4rem }
+.intro-container .border:nth-child(11) { top: 56%; left: 45%; transform: rotate(90deg); font-size: 7rem }
+.intro-container .border:nth-child(12) { top: 62%; left: 48%; transform: rotate(90deg); font-size: 12rem }
+.intro-container .border:nth-child(13) { top: 50%; left: 72%; transform: rotate(180deg); font-size: 15rem }
+.intro-container .border:nth-child(14) { top: 53%; left: 53%; font-size: 8rem }
+.intro-container .border:nth-child(15) { top: 56%; left: 58%; transform: rotate(-90deg); font-size: 4rem }
+.intro-container .border:nth-child(16) { top: 62%; left: 58%; transform: rotate(180deg); font-size: 9rem }
+.intro-container .border:nth-child(17) { top: 52%; left: 65%; transform: rotate(90deg); font-size: 8rem }
+.intro-container .border:nth-child(18) { top: 65%; left: 66%; font-size: 5rem }
+.intro-container .border:nth-child(19) { top: 38%; left: 76%; transform: rotate(90deg); font-size: 7rem }
+.intro-container .border:nth-child(20) { top: 16%; left: 70%; transform: rotate(-90deg); font-size: 12rem }
+.intro-container .border:nth-child(21) { top: 16%; left: 51%; font-size: 5rem }
+.intro-container .border:nth-child(22) { top: 22%; left: 54%; font-size: 7rem }
+.intro-container .border:nth-child(23) { top: 7%; left: 59%; transform: rotate(180deg); font-size: 15rem }
+.intro-container .border:nth-child(24) { top: 27%; left: 80%; font-size: 7rem }
+
+.relatedwork-container .border:nth-child(1) { top: 39%; left: 23%; transform: rotate(180deg); font-size: 5rem}
+.relatedwork-container .border:nth-child(2) { top: 12%; left: 20%; transform: rotate(180deg); font-size: 12rem; }
+.relatedwork-container .border:nth-child(3) { top: 30%; left: 15%; font-size: 7rem }
+.relatedwork-container .border:nth-child(4) { top: 28%; left: 30%; font-size: 6rem }
+.relatedwork-container .border:nth-child(5) { top: 12%; left: 35%; font-size: 12rem; }
+.relatedwork-container .border:nth-child(6) { top: 46%; left: 18%; transform: rotate(180deg); font-size: 12rem; }
+.relatedwork-container .border:nth-child(7) { top: 21%; left: 46%; transform: rotate(90deg); font-size: 10rem; }
+.relatedwork-container .border:nth-child(8) { top: 53%; left: 28%; transform: rotate(-90deg); font-size: 7rem}
+.relatedwork-container .border:nth-child(9) { top: 53%; left: 35%; font-size: 15rem }
+.relatedwork-container .border:nth-child(10) { top: 68%; left: 32%; transform: rotate(180deg); font-size: 4rem }
+.relatedwork-container .border:nth-child(11) { top: 53%; left: 45%; transform: rotate(90deg); font-size: 7rem }
+.relatedwork-container .border:nth-child(12) { top: 62%; left: 48%; transform: rotate(90deg); font-size: 12rem }
+.relatedwork-container .border:nth-child(13) { top: 50%; left: 72%; transform: rotate(180deg); font-size: 15rem }
+.relatedwork-container .border:nth-child(14) { top: 53%; left: 52%; font-size: 6rem }
+.relatedwork-container .border:nth-child(15) { top: 56%; left: 58%; transform: rotate(-90deg); font-size: 4rem }
+.relatedwork-container .border:nth-child(16) { top: 62%; left: 58%; transform: rotate(180deg); font-size: 9rem }
+.relatedwork-container .border:nth-child(17) { top: 52%; left: 65%; transform: rotate(90deg); font-size: 8rem }
+.relatedwork-container .border:nth-child(18) { top: 68%; left: 66%; font-size: 5rem }
+.relatedwork-container .border:nth-child(19) { top: 38%; left: 76%; transform: rotate(90deg); font-size: 7rem }
+.relatedwork-container .border:nth-child(20) { top: 16%; left: 70%; transform: rotate(-90deg); font-size: 12rem }
+.relatedwork-container .border:nth-child(21) { top: 16%; left: 51%; font-size: 5rem }
+.relatedwork-container .border:nth-child(22) { top: 22%; left: 54%; font-size: 7rem }
+.relatedwork-container .border:nth-child(23) { top: 7%; left: 59%; transform: rotate(180deg); font-size: 15rem }
+.relatedwork-container .border:nth-child(24) { top: 27%; left: 80%; font-size: 7rem }
