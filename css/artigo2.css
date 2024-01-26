@@ -155,7 +155,7 @@ p.first-letter:first-child::first-letter {
     align-items: center;
     justify-content: center;
     position: relative;
-    z-index: 1;
+    z-index: 1; /* Ensure the title is on top of the borders */
 }
 
 .section-article {
@@ -225,4 +225,3 @@ b{
 .relatedwork-container .border:nth-child(22) { top: 22%; left: 54%; font-size: 7rem }
 .relatedwork-container .border:nth-child(23) { top: 7%; left: 59%; transform: rotate(180deg); font-size: 15rem }
 .relatedwork-container .border:nth-child(24) { top: 27%; left: 80%; font-size: 7rem }
-
